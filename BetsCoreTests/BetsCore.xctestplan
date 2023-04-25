@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "358B0AFE-5669-4E53-9052-FF22E320C318",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:Bets.xcodeproj",
+          "identifier" : "B5C0FD7329E694E0009AD7E4",
+          "name" : "BetsCore"
+        }
+      ]
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Bets.xcodeproj",
+      "identifier" : "B5C0FD5729E69206009AD7E4",
+      "name" : "Bets"
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Bets.xcodeproj",
+        "identifier" : "B5C0FD7A29E694E1009AD7E4",
+        "name" : "BetsCoreTests"
+      }
+    }
+  ],
+  "version" : 1
+}

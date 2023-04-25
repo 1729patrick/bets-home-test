@@ -1,0 +1,45 @@
+{
+  "configurations" : [
+    {
+      "id" : "B03D56EA-9CA8-497E-AC74-0BFC0A5AE2B9",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:Bets.xcodeproj",
+          "identifier" : "B5C0FD5729E69206009AD7E4",
+          "name" : "Bets"
+        },
+        {
+          "containerPath" : "container:Bets.xcodeproj",
+          "identifier" : "B5C0FD7329E694E0009AD7E4",
+          "name" : "BetsCore"
+        }
+      ]
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Bets.xcodeproj",
+        "identifier" : "3BF9985829F7300000FB5DE6",
+        "name" : "BetsTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Bets.xcodeproj",
+        "identifier" : "B5C0FD7A29E694E1009AD7E4",
+        "name" : "BetsCoreTests"
+      }
+    }
+  ],
+  "version" : 1
+}
