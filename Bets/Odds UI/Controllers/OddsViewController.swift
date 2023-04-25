@@ -18,7 +18,7 @@ class OddsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = "Odds"
+        setupView()
 
         configureNavbar()
         configureCollectionView()
@@ -45,6 +45,12 @@ class OddsViewController: UIViewController {
     }
 }
 
+extension OddsViewController {
+    func setupView() {
+        navigationItem.title = "Odds"
+        view.backgroundColor = .systemBackground
+    }
+}
 
 extension OddsViewController {
     private func configureNavbar() {
@@ -106,7 +112,9 @@ extension OddsViewController {
     private func configureActivityIndicator() {
         activity = UIActivityIndicatorView(style: .medium)
         activity.translatesAutoresizingMaskIntoConstraints = false
+
         view.addSubview(activity)
+
         NSLayoutConstraint.activate([
             activity.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             activity.centerYAnchor.constraint(equalTo: view.centerYAnchor),
