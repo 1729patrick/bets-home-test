@@ -24,6 +24,7 @@ class OddCollectionViewListCell: UICollectionViewListCell {
     private var nameLabel: UILabel = {
         let label = UILabel()
         label.font = .preferredFont(forTextStyle: .headline)
+        label.adjustsFontForContentSizeCategory = true
 
         return label
     }()
@@ -31,6 +32,7 @@ class OddCollectionViewListCell: UICollectionViewListCell {
     private var sellInLabel: UILabel = {
         let label = UILabel()
         label.font = .preferredFont(forTextStyle: .body)
+        label.adjustsFontForContentSizeCategory = true
 
         return label
     }()
@@ -38,7 +40,8 @@ class OddCollectionViewListCell: UICollectionViewListCell {
     private var qualityLabel: UILabel = {
         let label = UILabel()
         label.font = .preferredFont(forTextStyle: .body)
-
+        label.adjustsFontForContentSizeCategory = true
+        
         return label
     }()
 
